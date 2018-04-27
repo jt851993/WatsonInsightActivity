@@ -1,0 +1,14 @@
+{
+  "name": "Watson-Insight-Activity",
+  "version": "0.0.1",
+  "main": "server.js",
+  "description": "Watson Insight activity",
+  "license": "Apache-2.0",
+  "repository": {
+  },
+  "dependencies": {
+    "watson-developer-cloud": "^3.0.7",
+    "readline-sync":"^1.4.9",
+    "dotenv": "^5.0.1"
+  }
+}
