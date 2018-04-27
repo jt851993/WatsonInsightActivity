@@ -8,11 +8,11 @@ var personality_insights = new PersonalityInsightsV3({
   version_date: '2017-10-13'
 });
 
-var name = readline.question("Enter your Paragraph:\n");
+var data = readline.question("Enter your Paragraph:\n");
 
 var params = {
   // Get the content from the JSON file.
-  content: name,
+  content: data,
   content_type: 'text/plain',
   consumption_preferences: true,
   raw_scores: true
@@ -26,5 +26,3 @@ personality_insights.profile(params, function(error, response) {
     console.log(JSON.stringify(response, null, 2));
   }
 );
-
-console.log("Hi " + name + ", nice to meet you.");
